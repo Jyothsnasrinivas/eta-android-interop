@@ -43,7 +43,16 @@ cabal-version:       >=1.10
 
 library
   -- Modules exported by the library.
-  exposed-modules:    Interop.Android.App.Types 
+  exposed-modules:    Interop.Android.App.Types
+                      Interop.Android.Content.Types
+                      Interop.Android.OS.Types
+                      Interop.Android.View.Types
+                      Interop.Android.Widget.Types
+
+  default-extensions: DataKinds,
+                      FlexibleContexts,
+                      TypeFamilies,
+                      TypeOperators
 
   -- Modules included in this library but not exported.
   -- other-modules:
@@ -52,7 +61,8 @@ library
   -- other-extensions:
 
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.8 && <4.9
+  build-depends:       base >=4.8 && <4.9,
+                       eta-java-interop
 
   -- Directories containing source files.
   hs-source-dirs:      src
