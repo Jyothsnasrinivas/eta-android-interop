@@ -90,3 +90,19 @@ data AccessibilityRecord = AccessibilityRecord
     deriving Class
 
 -- End android.view.accessibility.AccessibilityRecord
+
+-- Start android.view.ViewGroup.MarginLayoutParams
+
+data MarginLayoutParams = MarginLayoutParams @android.view.ViewGroup.MarginLayoutParams
+  deriving Class
+
+type instance Inherits MarginLayoutParams = '[ViewGroupLayoutParams]
+
+-- End android.view.ViewGroup.MarginLayoutParams
+
+-- Start android.view.ViewGroup.LayoutParams
+
+data ViewGroupLayoutParams = ViewGroupLayoutParams @android.view.ViewGroup$LayoutParams
+  deriving Class
+
+-- End android.view.ViewGroup.LayoutParams

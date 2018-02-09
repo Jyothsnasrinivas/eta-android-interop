@@ -325,3 +325,105 @@ foreign import java unsafe "@wrapper onAccessibilityEvent" mkOnAccessibilityEven
   (AccessibilityEvent -> Java OnAccessibilityEventListener Bool) -> OnAccessibilityEventListener
 
 -- End android.app.UiAutomation.AccessibilityEventListener
+
+-- Start android.app.ActionBar
+
+data ActionBar = ActionBar @android.app.ActionBar
+  deriving Class
+
+-- End android.app.ActionBar
+
+-- Start android.app.ActionBar.LayoutParams
+
+data ActionBarLayoutParams = ActionBarLayoutParams @android.app.ActionBar$LayoutParams
+  deriving Class
+
+type instance Inherits ActionBarLayoutParams = '[MarginLayoutParams]
+
+-- End android.app.ActionBar.LayoutParams
+
+-- Start android.app.ActivityGroup
+
+data ActivityGroup = ActivityGroup @android.app.ActivityGroup
+  deriving Class
+
+type instance Inherits ActivityGroup = '[Activity]
+
+-- End android.app.ActivityGroup
+
+-- Start android.app.ActivityManager
+
+data ActivityManager = ActivityManager @android.app.ActivityManager
+  deriving Class
+
+-- End android.app.ActivityManager
+
+-- Start android.app.ActivityManager.AppTask
+
+data ActivityManagerAppTask = ActivityManagerAppTask @android.app.ActivityManager$AppTask
+  deriving Class
+
+-- End android.app.ActivityManager.AppTask
+
+-- Start android.app.ActivityManager.MemoryInfo
+
+data ActivityManagerMemoryInfo = ActivityManagerMemoryInfo @android.app.ActivityManager$MemoryInfo
+  deriving Class
+
+type instance Inherits ActivityManagerMemoryInfo = '[Object, Parcelable]
+
+-- End android.app.ActivityManager.MemoryInfo
+
+-- Start android.app.ActivityManager.ProcessErrorStateInfo
+
+data ProcessErrorStateInfo = ProcessErrorStateInfo @android.app.ActivityManager.ProcessErrorStateInfo
+  deriving Class
+
+type instance Inherits ProcessErrorStateInfo = '[Object, Parcelable]
+
+-- End android.app.ActivityManager.ProcessErrorStateInfo
+
+-- Start android.app.ActivityManager.RecentTaskInfo
+
+data RecentTaskInfo = RecentTaskInfo @android.app.ActivityManager.RecentTaskInfo
+  deriving Class
+
+type instance Inherits RecentTaskInfo = '[Object, Parcelable]
+
+-- End android.app.ActivityManager.RecentTaskInfo
+
+-- Start android.app.ActivityManager.RunningAppProcessInfo
+
+data RunningAppProcessInfo = RunningAppProcessInfo @android.app.ActivityManager.RunningAppProcessInfo
+  deriving Class
+
+type instance Inherits RunningAppProcessInfo = '[Object, Parcelable]
+
+-- End android.app.ActivityManager.RunningAppProcessInfo
+
+-- Start android.app.ActivityManager.RunningServiceInfo
+
+data RunningServiceInfo = RunningServiceInfo @android.app.ActivityManager.RunningServiceInfo
+  deriving Class
+
+type instance Inherits RunningServiceInfo = '[Object, Parcelable]
+
+-- End android.app.ActivityManager.RunningServiceInfo
+
+-- Start android.app.ActivityManager.RunningTaskInfo
+
+data RunningTaskInfo = RunningTaskInfo @android.app.ActivityManager.RunningTaskInfo
+  deriving Class
+
+type instance Inherits RunningTaskInfo = '[Object, Parcelable]
+
+-- End android.app.ActivityManager.RunningTaskInfo
+
+-- Start android.app.ActivityManager.TaskDescription
+
+data TaskDescription = TaskDescription @android.app.ActivityManager.TaskDescription
+  deriving Class
+
+type instance Inherits TaskDescription = '[Object, Parcelable]
+
+-- End android.app.ActivityManager.TaskDescription
