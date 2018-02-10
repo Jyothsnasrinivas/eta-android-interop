@@ -427,3 +427,508 @@ data TaskDescription = TaskDescription @android.app.ActivityManager.TaskDescript
 type instance Inherits TaskDescription = '[Object, Parcelable]
 
 -- End android.app.ActivityManager.TaskDescription
+
+-- Start android.app.ActivityOptions
+
+data ActivityOptions = ActivityOptions @android.app.ActivityOptions
+  deriving Class
+
+-- End android.app.ActivityOptions
+
+-- Start android.app.AlarmManager
+
+data AlarmManager = AlarmManager @android.app.AlarmManager
+  deriving Class
+
+-- End android.app.AlarmManager
+
+-- Start android.app.AlarmManager.AlarmClockInfo
+
+data AlarmClockInfo = AlarmClockInfo @android.app.AlarmManager$AlarmClockInfo
+  deriving Class
+
+type instance Inherits AlarmClockInfo = '[Object, Parcelable]
+
+-- End android.app.AlarmManager.AlarmClockInfo
+
+-- Start android.app.AlertDialog
+
+data AlertDialog = AlertDialog @android.app.AlertDialog
+  deriving Class
+
+type instance Inherits AlertDialog = '[Dialog, DialogInterface]
+
+-- End android.app.AlertDialog
+
+-- Start android.app.Dialog
+
+data Dialog = Dialog @android.app.Dialog
+  deriving Class
+
+type instance Inherits Dialog = '[Object, DialogInterface, WindowCallback, KeyEventCallback, OnCreateContextMenuListener]
+
+-- End android.app.Dialog
+
+-- Start android.app.AlertDialog.Builder
+
+data AlertDialogBuilder = AlertDialogBuilder @android.app.AlertDialog$Builder
+  deriving Class
+
+-- End android.app.AlertDialog.Builder
+
+-- Start android.app.AliasActivity
+
+data AliasActivity = AliasActivity @android.app.AliasActivity
+  deriving Class
+
+type instance Inherits AliasActivity = '[Activity]
+
+-- End android.app.AliasActivity
+
+-- Start android.app.Application
+
+data Application = Application @android.app.Application
+  deriving Class
+
+type instance Inherits Application = '[ContextWrapper, ComponentCallbacks2]
+
+-- End android.app.Application
+
+-- Start android.app.ApplicationErrorReport
+
+data ApplicationErrorReport = ApplicationErrorReport @android.app.ApplicationErrorReport
+  deriving Class
+
+type instance Inherits ApplicationErrorReport = '[Object, Parcelable]
+
+-- End android.app.ApplicationErrorReport
+
+-- Start android.app.ApplicationErrorReport.AnrInfo
+
+data AnrInfo = AnrInfo @android.app.ApplicationErrorReport$AnrInfo
+  deriving Class
+
+-- End android.app.ApplicationErrorReport.AnrInfo
+
+-- Start android.app.ApplicationErrorReport.BatteryInfo
+
+data BatteryInfo = BatteryInfo @android.app.ApplicationErrorReport$BatteryInfo
+  deriving Class
+
+-- End android.app.ApplicationErrorReport.BatteryInfo
+
+-- Start android.app.ApplicationErrorReport.CrashInfo
+
+data CrashInfo = CrashInfo @android.app.ApplicationErrorReport$CrashInfo
+  deriving Class
+
+-- End android.app.ApplicationErrorReport.CrashInfo
+
+-- Start android.app.AppOpsManager
+
+data AppOpsManager = AppOpsManager @android.app.AppOpsManager
+  deriving Class
+
+-- End android.app.AppOpsManager
+
+-- Start android.app.AutomaticZenRule
+
+data AutomaticZenRule = AutomaticZenRule @android.app.AutomaticZenRule
+  deriving Class
+
+type instance Inherits AutomaticZenRule = '[Object, Parcelable]
+
+-- End android.app.AutomaticZenRule
+
+-- Start android.app.DatePickerDialog
+
+data DatePickerDialog = DatePickerDialog @android.app.DatePickerDialog
+  deriving Class
+
+type instance Inherits DatePickerDialog = '[AlertDialog, OnClickListener, OnDateChangedListener]
+
+-- End android.app.DatePickerDialog
+
+-- Start android.app.DialogFragment
+
+data DialogFragment = DialogFragment @android.app.DialogFragment
+  deriving Class
+
+type instance Inherits DialogFragment = '[Fragment, OnCancelListener, OnDismissListener]
+
+-- End android.app.DialogFragment
+
+-- Start android.app.Fragment
+
+data Fragment = Fragment @android.app.Fragment
+  deriving Class
+
+type instance Inherits Fragment = '[Object, ComponentCallbacks2, OnCreateContextMenuListener]
+
+-- End android.app.Fragment
+
+-- Start android.app.DownloadManager
+
+data DownloadManager = DownloadManager @android.app.DownloadManager
+  deriving Class
+
+-- End android.app.DownloadManager
+
+-- Start android.app.DownloadManager.Query
+
+data DownloadManagerQuery = DownloadManagerQuery @android.app.DownloadManagerQuery
+  deriving Class
+
+-- End android.app.DownloadManager.Query
+
+-- Start android.app.DownloadManager.Request
+
+data DownloadManagerRequest = DownloadManagerRequest @android.app.DownloadManagerRequest
+  deriving Class
+
+-- End android.app.DownloadManager.Request
+
+-- Start android.app.ExpandableListActivity
+
+data ExpandableListActivity = ExpandableListActivity @android.app.ExpandableListActivity
+  deriving Class
+
+type instance Inherits ExpandableListActivity = '[ActionBar, OnCreateContextMenuListener, OnChildClickListener, OnGroupCollapseListener, OnGroupExpandisterner]
+
+-- End android.app.ExpandableListActivity
+
+-- Start android.app.Fragment.SavedState
+
+data FragmentSavedState = FragmentSavedState @android.app.Fragment$SavedState
+  deriving Class
+
+type instance Inherits FragmentSavedState = '[Object, Parcelable]
+
+-- End android.app.FragmentSavedState
+
+-- Start android.app.FragmentBreadCrumbs
+
+data FragmentBreadCrumbs = FragmentBreadCrumbs @android.app.FragmentBreadCrumbs
+    deriving Class
+
+type instance Inherits FragmentBreadCrumbs = '[ViewGroup, OnBackStackChangedListener]
+
+-- End android.app.FragmentBreadCrumbs
+
+-- Start android.app.FragmentContainer
+
+data FragmentContainer = FragmentContainer @android.app.FragmentContainer
+  deriving Class
+
+-- End android.app.FragmentContainer
+
+-- Start android.app.FragmentController
+
+data FragmentController = FragmentController @android.app.FragmentController
+  deriving Class
+
+-- End android.app.FragmentController
+
+-- Start android.app.FragmentHostCallback
+
+data FragmentHostCallback = FragmentHostCallback @android.app.FragmentHostCallback
+  deriving Class
+
+type instance Inherits FragmentHostCallback = '[FragmentContainer]
+
+-- End android.app.FragmentHostCallback
+
+-- Start android.app.FragmentManager
+
+data FragmentManager = FragmentManager @android.app.FragmentManager
+  deriving Class
+
+-- End android.app.FragmentManager
+
+-- Start android.app.FragmentManager.FragmentLifecycleCallbacks
+
+data FragmentLifecycleCallbacks = FragmentLifecycleCallbacks
+  @android.app.FragmentManager$FragmentLifecycleCallbacks
+  deriving Class
+
+-- End android.app.FragmentManager.FragmentLifecycleCallbacks
+
+-- Start android.app.FragmentManagerNonConfig
+
+data FragmentManagerNonConfig = FragmentManagerNonConfig @android.app.FragmentManagerNonConfig
+  deriving Class
+
+-- End android.app.FragmentManagerNonConfig
+
+-- Start android.app.Instrumentation
+
+data Instrumentation = Instrumentation @android.app.Instrumentation
+  deriving Class
+
+-- End android.app.Instrumentation
+
+-- Start android.app.Instrumentation.ActivityMonitor
+
+data InstrumentationActivityMonitor = InstrumentationActivityMonitor
+  @android.app.Instrumentation$ActivityMonitor
+  deriving Class
+
+-- End android.app.Instrumentation.ActivityMonitor
+
+-- Start android.app.Instrumentation.ActivityResult
+
+data InstrumentationActivityResult = InstrumentationActivityResult
+  @android.app.Instrumentation$ActivityResult
+  deriving Class
+
+-- End android.app.Instrumentation.ActivityResult
+
+-- Start android.app.IntentService
+
+data IntentService = IntentService @android.app.IntentService
+  deriving Class
+
+type instance Inherits IntentService = '[Service]
+
+-- End android.app.IntentService
+
+-- Start android.app.Service
+
+data Service = Service @android.app.Service
+  deriving Class
+
+type instance Inherits Service = '[ContextWrapper, ComponentCallbacks2]
+
+-- End android.app.Service
+
+-- Start android.app.KeygaurdManager
+
+data KeyguardManager = KeyguardManager @android.app.KeyguardManager
+  deriving Class
+
+-- End android.app.KeyguardManager
+
+-- Start android.app.KeygaurdManager.KeyguardDismissCallback
+
+data KeyguardDismissCallback = KeyguardDismissCallback @android.app.KeyguardManager$KeyguardDismissCallback
+  deriving Class
+
+-- End android.app.KeyguardManager.KeyguardDismissCallback
+
+-- Start android.app.KeygaurdManager.KeyguardLock
+
+data KeyguardLock = KeyguardLock @android.app.KeyguardManager$KeyguardLock
+  deriving Class
+
+-- End android.app.KeyguardManager.KeyguardLock
+
+-- Start android.app.LauncherActivity
+
+data LauncherActivity = LauncherActivity @android.app.LauncherActivity
+  deriving Class
+
+type instance Inherits LauncherActivity = '[ListActivity]
+
+-- End android.app.LauncherActivity
+
+-- Start android.app.ListActivity
+
+data ListActivity = ListActivity @android.app.ListActivity
+  deriving Class
+
+type instance Inherits ListActivity = '[Activity]
+
+-- End android.app.ListActivity
+
+-- Start android.app.LauncherActivity.IconResizer
+
+data IconResizer = IconResizer @android.app.LauncherActivity$IconResizer
+  deriving Class
+
+-- End android.app.LauncherActivity.IconResizer
+
+-- Start android.app.LauncherActivity.ListItem
+
+data ListItem = ListItem @android.app.LauncherActivity$ListItem
+  deriving Class
+
+-- End android.app.LauncherActivity.ListItem
+
+-- Start android.app.ListFragment
+
+data ListFragment = ListFragment @android.app.ListFragment
+  deriving Class
+
+type instance Inherits ListFragment = '[Fragment]
+
+-- End android.app.ListFragment
+
+-- Start android.app.LoaderManager
+
+data LoaderManager = LoaderManager @android.app.LoaderManager
+  deriving Class
+
+-- End android.app.LoaderManager
+
+-- Start android.app.LocalActivityManager
+
+data LocalActivityManager = LocalActivityManager @android.app.LocalActivityManager
+  deriving Class
+
+-- End android.app.LocalActivityManager
+
+-- Start android.app.MediaRouteActionProvider
+
+data MediaRouteActionProvider = MediaRouteActionProvider @android.app.MediaRouteActionProvider
+  deriving Class
+
+type instance Inherits MediaRouteActionProvider = '[ActionProvider]
+
+-- End android.app.MediaRouteActionProvider
+
+-- Start android.app.ActionProvider
+
+data ActionProvider = ActionProvider @android.app.ActionProvider
+  deriving Class
+
+-- End android.app.ActionProvider
+
+-- Start android.app.MediaRouteButton
+
+data MediaRouteButton = MediaRouteButton @android.app.MediaRouteButton
+  deriving Class
+
+type instance Inherits MediaRouteButton = '[View]
+
+-- End android.app.MediaRouteButton
+
+-- Start android.app.NativeActivity
+
+data NativeActivity = NativeActivity @android.app.NativeActivity
+  deriving Class
+
+type instance Inherits NativeActivity = '[Activity, SurfaceHolderCallback2, InputQueueCallback, OnGlobalLayoutListener]
+
+-- End android.app.NativeActivity
+
+-- Start android.app.Notification
+
+data Notification = Notification @android.app.Notification
+  deriving Class
+
+type instance Inherits Notification = '[Object, Parcelable]
+
+-- End android.app.Notification
+
+-- Start android.app.Notification.Action.WearableExtender
+
+data WearableExtender = WearableExtender @android.app.Notification$Action$WearableExtender
+  deriving Class
+
+type instance Inherits WearableExtender = '[Object, NotificationActionExtender]
+
+-- End android.app.Notification.Action.WearableExtender
+
+-- Start android.app.Notification.BigPictureStyle
+
+data BigPictureStyle = BigPictureStyle @android.app.Notification$BigPictureStyle
+  deriving Class
+
+type instance Inherits BigPictureStyle = '[NotificationStyle]
+
+-- End android.app.Notification.BigPictureStyle
+
+-- Start android.app.Notification.Style
+
+data NotificationStyle = NotificationStyle @android.app.Notification$Style
+  deriving Class
+
+-- End android.app.Notification.Style
+
+-- Start android.app.Notification.BigTextStyle
+
+data BigTextStyle = BigTextStyle @android.app.Notification$BigTextStyle
+  deriving Class
+
+type instance Inherits BigTextStyle = '[NotificationStyle]
+
+-- End android.app.Notification.BigTextStyle
+
+-- Start android.app.Notification.CarExtender
+
+data CarExtender = CarExtender @android.app.Notification$CarExtender
+  deriving Class
+
+type instance Inherits CarExtender = '[Object, NotificationExtender]
+
+-- End android.app.Notification.CarExtender
+
+-- Start android.app.Notification.CarExtender.Builder
+
+data CarExtenderBuilder = CarExtenderBuilder @android.app.Notification$CarExtender$Builder
+  deriving Class
+
+-- End android.app.Notification.CarExtender.Builder
+
+-- Start android.app.Notification.CarExtender.UnreadConversation
+
+data CarExtenderUnreadConversation = CarExtenderUnreadConversation
+  @android.app.Notification$CarExtender$UnreadConversation
+  deriving Class
+
+-- End android.app.Notification.CarExtender.UnreadConversation
+
+-- Start android.app.Notification.DecoratedCustomViewStyle
+
+data DecoratedCustomViewStyle = DecoratedCustomViewStyle
+  @android.app.Notification$DecoratedCustomViewStyle
+  deriving Class
+
+type instance Inherits DecoratedCustomViewStyle = '[NotificationStyle]
+
+-- End android.app.Notification.DecoratedCustomViewStyle
+
+-- Start android.app.Notification.DecoratedMediaCustomViewStyle
+
+data DecoratedMediaCustomViewStyle = DecoratedMediaCustomViewStyle
+  @android.app.Notification$DecoratedMediaCustomViewStyle
+  deriving Class
+
+type instance Inherits DecoratedMediaCustomViewStyle = '[NotificationMediaStyle]
+
+-- End android.app.Notification.DecoratedMediaCustomViewStyle
+
+-- Start android.app.Notification.MediaStyle
+
+data NotificationMediaStyle = NotificationMediaStyle @android.app.Notification$MediaStyle
+  deriving Class
+
+type instance Inherits NotificationMediaStyle = '[NotificationStyle]
+
+-- End android.app.Notification.MediaStyle
+
+-- Start android.app.Notification.InboxStyle
+
+data NotificationInboxStyle = NotificationInboxStyle @android.app.Notification$InboxStyle
+  deriving Class
+
+type instance Inherits NotificationInboxStyle = '[NotificationStyle]
+
+-- End android.app.Notification.InboxStyle
+
+-- Start android.app.Notification.MessagingStyle
+
+data NotificationMessagingStyle = NotificationMessagingStyle @android.app.Notification$MessagingStyle
+  deriving Class
+
+type instance Inherits NotificationMessagingStyle = '[NotificationStyle]
+
+-- End android.app.Notification.MessagingStyle
+
+-- Start android.app.Notification.MessagingStyle.Message
+
+data MessagingStyleMessage = MessagingStyleMessage
+  @android.app.Notification$MessagingStyle$Message
+  deriving Class
+
+-- End android.app.Notification.MessagingStyle.Message

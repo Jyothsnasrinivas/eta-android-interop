@@ -47,3 +47,20 @@ data Intent = Intent @android.content.Intent
   deriving Class
 
 -- End android.content.Intent
+
+-- Start android.content.DialogInterface
+
+data DialogInterface = DialogInterface @android.app.DialogInterface
+  deriving Class
+
+-- End android.app.DialogInterface
+
+-- Start android.content.DialogInterface.OnClickListener
+
+data OnClickListener = OnClickListener @android.app.DialogInterface$OnClickListener
+  deriving Class
+
+foreign import java unsafe "@wrapper onClick" mkOnClickListener ::
+  (DialogInterface -> Int -> Java OnClickListener ()) -> OnClickListener
+
+-- End android.app.DialogInterface.OnClickListener
