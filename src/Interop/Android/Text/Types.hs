@@ -60,3 +60,10 @@ data Spanned = Spanned @android.text.Spanned
 type instance Inherits Spanned = '[CharSequence]
 
 -- End android.text.Spanned
+
+-- Start android.text.ClipboardManager
+
+data ClipboardManager = ClipboardManager @android.text.ClipboardManager
+  deriving Class
+
+-- End android.text.ClipboardManager

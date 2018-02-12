@@ -2,6 +2,7 @@ module Interop.Android.OS.Types where
 
 import Java
 import Interop.Java.Lang
+import Interop.Java.IO
 
 -- Start android.os.Bundle
 
@@ -25,3 +26,19 @@ data Parcelable = Parcelable @android.os.Parcelable
   deriving Class
 
 -- End android.os.Parcelable
+
+-- Start android.os.ParcelFileDescriptor
+
+data ParcelFileDescriptor = ParcelFileDescriptor @android.os.ParcelFileDescriptor
+  deriving Class
+
+type instance Inherits ParcelFileDescriptor = '[Parcelable, Closeable]
+
+-- End android.os.ParcelFileDescriptor
+
+-- Start android.os.Handler
+
+data Handler = Handler @android.os.Handler
+  deriving Class
+
+-- End android.os.Handler

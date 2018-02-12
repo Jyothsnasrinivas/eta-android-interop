@@ -45,6 +45,7 @@ library
   -- Modules exported by the library.
   exposed-modules:    Interop.Android.App.Types
                       Interop.Android.Content.Types
+                      Interop.Android.Database.Types
                       Interop.Android.Graphics.Types
                       Interop.Android.OS.Types
                       Interop.Android.Text.Types
