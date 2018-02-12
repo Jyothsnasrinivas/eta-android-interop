@@ -48,6 +48,7 @@ library
                       Interop.Android.Graphics.Types
                       Interop.Android.OS.Types
                       Interop.Android.Text.Types
+                      Interop.Android.Util.Types
                       Interop.Android.View.Types
                       Interop.Android.Widget.Types
 

@@ -1,8 +1,11 @@
 module Interop.Android.App.Types where
 
 import Java
+import Data.Typeable
+import Interop.Java.Lang
 import Interop.Android.Content.Types
 import Interop.Android.OS.Types
+import Interop.Android.Util.Types
 import Interop.Android.View.Types
 import Interop.Android.Widget.Types
 
@@ -932,3 +935,280 @@ data MessagingStyleMessage = MessagingStyleMessage
   deriving Class
 
 -- End android.app.Notification.MessagingStyle.Message
+
+-- Start android.app.Notification.WearableExtender
+
+data NotificationWearableExtender = NotificationWearableExtender
+  @android.app.Notification$WearableExtender
+  deriving Class
+
+type instance Inherits NotificationWearableExtender = '[Object, NotificationExtender]
+
+-- End android.app.Notification.WearableExtender
+
+-- Start android.app.NotificationChannel
+
+data NotificationChannel = NotificationChannel @android.app.NotificationChannel
+  deriving Class
+
+type instance Inherits NotificationChannel = '[Object, Parcelable]
+
+-- End android.app.NotificationChannel
+
+-- Start android.app.NotificationChannelGroup
+
+data NotificationChannelGroup = NotificationChannelGroup @android.app.NotificationChannelGroup
+  deriving Class
+
+type instance Inherits NotificationChannelGroup = '[Object, Parcelable]
+
+-- End android.app.NotificationChannelGroup
+
+-- Start android.app.NotificationManager
+
+data NotificationManager = NotificationManager @android.app.NotificationManager
+  deriving Class
+
+-- End android.app.NotificationManager
+
+-- Start android.app.NotificationManager.Policy
+
+data NotificationManagerPolicy = NotificationManagerPolicy @android.app.NotificationManager$Policy
+  deriving Class
+
+-- End android.app.NotificationManager.Policy
+
+-- Start android.app.PictureInPictureParams
+
+data PictureInPictureParams = PictureInPictureParams @android.app.PictureInPictureParams
+  deriving Class
+
+type instance Inherits PictureInPictureParams = '[Object, Parcelable]
+
+-- End android.app.PictureInPictureParams
+
+-- Start android.app.PictureInPictureParams.Builder
+
+data PictureInPictureParamsBuilder = PictureInPictureParamsBuilder
+  @android.app.PictureInPictureParams$Builder
+  deriving Class
+
+-- End android.app.PictureInPictureParams.Builder
+
+-- Start android.app.Presentation
+
+data Presentation = Presentation @android.app.Presentation
+  deriving Class
+
+type instance Inherits Presentation = '[Dialog]
+
+-- End android.app.Presentation
+
+-- Start android.app.ProgressDialog
+
+data ProgressDialog = ProgressDialog @android.app.ProgressDialog
+  deriving Class
+
+type instance Inherits ProgressDialog = '[AlertDialog]
+
+-- End android.app.ProgressDialog
+
+-- Start android.app.RemoteAction
+
+data RemoteAction = RemoteAction @android.app.RemoteAction
+  deriving Class
+
+type instance Inherits RemoteAction = '[Object, Parcelable]
+
+-- End android.app.RemoteAction
+
+-- Start android.app.RemoteInput.Builder
+
+data RemoteInputBuilder = RemoteInputBuilder @android.app.RemoteInput$Builder
+  deriving Class
+
+-- End android.app.RemoteInput.Builder
+
+-- Start android.app.SearchableInfo
+
+data SearchableInfo = SearchableInfo @android.app.SearchableInfo
+  deriving Class
+
+-- End android.app.SearchableInfo
+
+-- Start android.app.SearchManager
+
+data SearchManager = SearchManager @android.app.SearchManager
+  deriving Class
+
+-- End android.app.SearchManager
+
+-- Start android.app.SharedElementCallback
+
+data SharedElementCallback = SharedElementCallback @android.app.SharedElementCallback
+    deriving Class
+
+-- End android.app.SharedElementCallback
+
+-- Start android.app.TabActivity
+
+data TabActivity = TabActivity @android.app.TabActivity
+    deriving Class
+
+type instance Inherits TabActivity = '[ActivityGroup]
+
+-- End android.app.TabActivity
+
+-- Start android.app.TaskStackBuilder
+
+data TaskStackBuilder = TaskStackBuilder @android.app.TaskStackBuilder
+    deriving Class
+
+-- End android.app.TaskStackBuilder
+
+-- Start android.app.TimePickerDialog
+
+data TimePickerDialog = TimePickerDialog @android.app.TimePickerDialog
+    deriving Class
+
+type instance Inherits TimePickerDialog = '[AlertDialog, OnClickListener, OnTimeChangedListener]
+
+-- End android.app.TimePickerDialog
+
+-- Start android.app.UiAutomation
+
+data UiAutomation = UiAutomation @android.app.UiAutomation
+    deriving Class
+
+-- End android.app.UiAutomation
+
+-- Start android.app.UiModeManager
+
+data UiModeManager = UiModeManager @android.app.UiModeManager
+    deriving Class
+
+-- End android.app.UiModeManager
+
+-- Start android.app.VoiceIterator
+
+data VoiceIterator = VoiceIterator @android.app.VoiceIterator
+    deriving Class
+
+-- End android.app.VoiceIterator
+
+-- Start android.app.VoiceIterator.AbortVoiceRequest
+
+data AbortVoiceRequest = AbortVoiceRequest @android.app.VoiceIterator$AbortVoiceRequest
+    deriving Class
+
+type instance Inherits AbortVoiceRequest = '[VoiceIteratorRequest]
+
+-- End android.app.VoiceIterator.AbortVoiceRequest
+
+-- Start android.app.VoiceIterator.Request
+
+data VoiceIteratorRequest = VoiceIteratorRequest @android.app.VoiceIterator$Request
+    deriving Class
+
+-- End android.app.VoiceIterator.Request
+
+-- Start android.app.VoiceIterator.CommandRequest
+
+data CommandRequest = CommandRequest @android.app.VoiceIterator$CommandRequest
+    deriving Class
+
+type instance Inherits CommandRequest = '[VoiceIteratorRequest]
+
+-- End android.app.VoiceIterator.CommandRequest
+
+-- Start android.app.VoiceIterator.CompleteVoiceRequest
+
+data CompleteVoiceRequest = CompleteVoiceRequest @android.app.VoiceIterator$CompleteVoiceRequest
+    deriving Class
+
+type instance Inherits CompleteVoiceRequest = '[VoiceIteratorRequest]
+
+-- End android.app.VoiceIterator.CompleteVoiceRequest
+
+-- Start android.app.VoiceIterator.ConfirmationRequest
+
+data ConfirmationRequest = ConfirmationRequest @android.app.VoiceIterator$ConfirmationRequest
+    deriving Class
+
+type instance Inherits ConfirmationRequest = '[VoiceIteratorRequest]
+
+-- End android.app.VoiceIterator.ConfirmationRequest
+
+-- Start android.app.VoiceIterator.PickOptionRequest
+
+data PickOptionRequest = PickOptionRequest @android.app.VoiceIterator$PickOptionRequest
+    deriving Class
+
+type instance Inherits PickOptionRequest = '[VoiceIteratorRequest]
+
+-- End android.app.VoiceIterator.PickOptionRequest
+
+-- Start android.app.VoiceIterator.PickOptionRequest.Option
+
+data PickOptionRequestOption = PickOptionRequestOption
+  @android.app.VoiceIterator$PickOptionRequest$Option
+    deriving Class
+
+type instance Inherits PickOptionRequestOption = '[Object, Parcelable]
+
+-- End android.app.VoiceIterator.PickOptionRequest.Option
+
+-- Start android.app.VoiceIterator.Prompt
+
+data VoiceIteratorPrompt = VoiceIteratorPrompt @android.app.VoiceIterator$Prompt
+    deriving Class
+
+type instance Inherits VoiceIteratorPrompt = '[Object, Parcelable]
+
+-- End android.app.VoiceIterator.Prompt
+
+-- Start android.app.WallpaperInfo
+
+data WallpaperInfo = WallpaperInfo @android.app.WallpaperInfo
+    deriving Class
+
+type instance Inherits WallpaperInfo = '[Object, Parcelable]
+
+-- End android.app.WallpaperInfo
+
+-- Start android.app.WallpaperManger
+
+data WallpaperManager = WallpaperManager @android.app.WallpaperManager
+    deriving Class
+
+-- End android.app.WallpaperManager
+
+-- Start android.app.AuthenticationRequiredException
+
+data AuthenticationRequiredException = AuthenticationRequiredException
+  @android.app.AuthenticationRequiredException
+    deriving (Class, Typeable)
+
+type instance Inherits AuthenticationRequiredException = '[SecurityException, Parcelable]
+
+-- End android.app.AuthenticationRequiredException
+
+-- Start android.app.Fragment.InstantiationException
+
+data FragmentInstantiationException = FragmentInstantiationException
+  @android.app.Fragment$InstantiationException
+    deriving (Class, Typeable)
+
+type instance Inherits FragmentInstantiationException = '[AndroidRuntimeException]
+
+-- End android.app.Fragment.InstantiationException
+
+-- Start android.app.PendingIntent.CanceledException
+
+data PendingIntentCanceledException = PendingIntentCanceledException
+  @android.app.PendingIntent$CanceledException
+    deriving (Class, Typeable)
+
+type instance Inherits PendingIntentCanceledException = '[AndroidException]
+
+-- End android.app.PendingIntent.CanceledException

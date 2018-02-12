@@ -131,3 +131,11 @@ foreign import java unsafe "@wrapper onFilterComplete" mkFilterFilterListener ::
   (Int -> Java FilterFilterListener ()) -> FilterFilterListener
 
 -- End android.widget.Fileter.FilterListener
+
+-- Start android.widget.TimePicker.OnTimeChangedListener
+
+data OnTimeChangedListener = OnTimeChangedListener
+  @android.widget.TimePicker$OnTimeChangedListener
+  deriving Class
+
+-- End android.widget.TimePicker.OnTimeChangedListener
